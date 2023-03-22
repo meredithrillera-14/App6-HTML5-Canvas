@@ -39,12 +39,9 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-// links the body with the function, by creating a label	
-var Rect_canvas = document.getElementById("Rect");
-
 //canvas making the rect- id Rect
 function draw_Rect() {
-  var Rect_canvas = document.getElementById("Rect");//puts rectangle onto canvas
+  var Rect_canvas = document.getElementById("Rect");// links the body with the function, by creating a label
   var Rect_context = Rect_canvas.getContext("2d"); //just a 4 line flat on screen rectangle
   Rect_context.fillRect(100, 100, 150, 125);
 }
