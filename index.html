@@ -44,8 +44,8 @@ var Rect_canvas = document.getElementById("Rect");
 
 //canvas making the rect- id Rect
 function draw_Rect() {
-  var Rect_canvas = document.getElementById("Rect");
-  var Rect_context = Rect_canvas.getContext("2d");
+  var Rect_canvas = document.getElementById("Rect");//puts rectangle onto canvas
+  var Rect_context = Rect_canvas.getContext("2d"); //just a 4 line flat on screen rectangle
   Rect_context.fillRect(100, 100, 150, 125);
 }
 
