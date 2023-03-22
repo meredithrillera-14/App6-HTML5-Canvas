@@ -40,13 +40,13 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 // links the body with the function, by creating a label	
-var a_canvas = document.getElementById("a");
+var Rect_canvas = document.getElementById("Rect");
 
-//canvas making the rect- id b
-function draw_a() {
-  var a_canvas = document.getElementById("b");
-  var a_context = a_canvas.getContext("2d");
-  a_context.fillRect(100, 100, 150, 125);
+//canvas making the rect- id Rect
+function draw_Rect() {
+  var Rect_canvas = document.getElementById("Rect");
+  var Rect_context = Rect_canvas.getContext("2d");
+  Rect_context.fillRect(100, 100, 150, 125);
 }
 
 	
@@ -93,7 +93,7 @@ function draw_a() {
 		<h1>Canvas with Border</h1> 
 	</div> <!-- closing section that displays the title-->
 	
-		<canvas id="a" width="100" height="50"></canvas>
+		<canvas id="Rect" width="200" height="100"></canvas>
 	</div>
 	</div>
 
