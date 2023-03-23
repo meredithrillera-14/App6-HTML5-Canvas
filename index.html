@@ -41,11 +41,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 //canvas making the rect- id Rect
 function draw_Rect() {
-  var Rect_canvas = document.getElementById("Rect");// links the body with the function, by creating a label
+  var Rect_canvas = document.getElementById("Canvas");// links the body with the function, by creating a label
   var Rect_context = Rect_canvas.getContext("2d"); //just a 4 line flat on screen rectangle
-  Rect_context.fillRect(100, 100, 150, 125);
+  Rect_context.fillRect(100, 100, 150, 125); //size 
 }
-
 	
 </script>
 
@@ -90,8 +89,9 @@ function draw_Rect() {
 		<h1>Canvas</h1> 
 	</div> <!-- closing section that displays the title-->
 	
-	<canvas id="Rect" width="250" height="200" style="border:1px solid #000000"> <!--canvas code and size-->
+	<canvas id="Canvas" width="300" height="250" style="border:1px solid #000000"> <!--canvas code and size-->
 	</canvas>
+	
 	</div>
 	</div>
 
