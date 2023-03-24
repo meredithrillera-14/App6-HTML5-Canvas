@@ -41,7 +41,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 //canvas making the rect- id Rect
 function draw_Rect() {
-	var Rect_canvas = document.getElementById("Canvas");// links the body with the function, by creating a label
+	var Rect_canvas = document.getElementById("Canvas"); // links the body with the function, by creating a label
 	var Rect_context = Rect_canvas.getContext("2d"); //just a 4 line flat on screen rectangle
 	Rect_context.fillRect(100, 100, 150, 125); //size 
 }
@@ -52,6 +52,14 @@ function add_Name() {
 	context.font = "30px Times New Roman"; //font for text
 	context.fillText("Meredith", 15, 50); //text and size of text
 }
+	
+function add_Image() {
+	var img = new image ():
+	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg';
+	img.addEventListener('load', function() { );
+	var canvas = document.getElementById('Canvas');
+	var context = canvas.getContext('2d');
+		context.drawImage(img, 0, 0); },false); //draws image and sets size of image
 		
 </script>
 
