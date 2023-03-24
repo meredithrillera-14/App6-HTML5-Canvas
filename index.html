@@ -54,18 +54,19 @@ function add_Name() {
 }
 	
 function add_Image() {
-	var img = new image ():
-	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg';
-	img.addEventListener('load', function() { );
+	var img = new image (): //to insert an image
+	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
+	img.addEventListener('load', function() { ); 
 	var canvas = document.getElementById('Canvas');
-	var context = canvas.getContext('2d');
+	var context = canvas.getContext('2d'); //image flat on the screen 
 		context.drawImage(img, 0, 0); },false); //draws image and sets size of image
 }
 
+//for clearing what is present on canvas	
 function earseCanvas() {
 	var c = document.getElementById("Canvas");
 	var context = c.getContext("2d");
-	earseCanvas.width = earseCanvas.width;
+	earseCanvas.width = earseCanvas.width; //erases the canvas, while knowing how big the canvas is
 }
 		
 </script>
