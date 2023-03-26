@@ -49,24 +49,23 @@ function draw_Rect() {
 function add_Name() {
  	var c = document.getElementById("Canvas");
  	var context = c.getContext("2d");
- 	context.font = "30px Times New Roman";
- 	context.fillText("Meredith", 15, 50);
+ 	context.font = "30px Times New Roman"; //how i want text to be presented 
+ 	context.fillText("Meredith", 15, 50); //what i want text to be and size
 }
 	
 function add_Image() {
-	var img = new image (): //to insert an image
+	var img = new Image (): //to insert an image
 	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
-	img.addEventListener('load', function() { ); 
-	var canvas = document.getElementById('Canvas');
-	var context = canvas.getContext('2d'); //image flat on the screen 
+	img.addEventListener('load', function() {
+	var canvas = document.getElementById("Canvas");
+	var context = canvas.getContext("2d"); //image flat on the screen 
 		context.drawImage(img, 0, 0); },false); //draws image and sets size of image
 }
 
 //for clearing what is present on canvas	
-function earseCanvas() {
-	var c = document.getElementById("Canvas");
-	var context = c.getContext("2d");
-	earseCanvas.width = earseCanvas.width; //erases the canvas, while knowing how big the canvas is
+function eraseCanvas() {
+	var eraseCanvas = document.getElementById("Canvas");
+	eraseCanvas.width = eraseCanvas.width; //erases the canvas, while knowing how big the canvas is
 }
 		
 </script>
