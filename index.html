@@ -53,7 +53,7 @@ function add_Name() {
 	context.clearRect(0, 0, c.width, c.height); // clear canvas before adding text
 	context.fillStyle = "white"; // set font color to white
 	context.fillRect(0, 0, c.width, c.height); // fill the canvas with a white background
- 	context.font = "30px Times New Roman";
+ 	context.font = "30px Times New Roman"; //what font and pixel for text
 	context.fillStyle = "black"; // set font color back to black
  	context.fillText("Meredith", 50, 50); // move text to visible area of canvas
 }
@@ -69,7 +69,7 @@ function add_Image() {
 
 //for clearing what is present on canvas	
 function eraseCanvas() {
-	var eraseCanvas = document.getElementById("Canvas");
+	var eraseCanvas = document.getElementById("Canvas"); //links to the id canvas
 	eraseCanvas.width = eraseCanvas.width; //erases the canvas, while knowing how big the canvas is
 }
 		
@@ -104,7 +104,7 @@ function eraseCanvas() {
 <div id="content" class="w3-container">
 	<p>Feel free to draw</p>
 		
-	<a href="#one" class="w3-btn w3-grey w3-round"> To Draw </a>
+	<a href="#one" class="w3-btn w3-grey w3-round"> To Draw </a> <!--button to bring user from home page to canvas page-->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
