@@ -50,11 +50,7 @@ function draw_Rect() {
 function add_Name() {
  	var c = document.getElementById("Canvas");
  	var context = c.getContext("2d");
-	context.clearRect(0, 0, c.width, c.height); // clear canvas before adding text
-	context.fillStyle = "white"; // set font color to white
-	context.fillRect(0, 0, c.width, c.height); // fill the canvas with a white background
  	context.font = "30px Times New Roman"; //what font and pixel for text
-	context.fillStyle = "black"; // set font color back to black
  	context.fillText("Meredith", 50, 50); // move text to visible area of canvas
 }
 	
