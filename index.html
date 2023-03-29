@@ -40,11 +40,11 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 //canvas making the rect- id Rect
-function draw_Rect() {
-	var Rect_canvas = document.getElementById("A"); // links the body with the function, by creating a label
-	var Rect_context = Rect_canvas.getContext("2d"); //draws a filled rectangle on the canvas
-	Rect_context.fillRect(50, 50, 100, 75); //size 
-}
+  function draw_Rect() {
+    var canvas = document.getElementById("A"); // links the body with the function, by creating a label
+    var ctx = canvas.getContext("2d"); //draws a filled rectangle on the canvas
+    ctx.fillRect(50, 50, 100, 75); //size 
+  }	//with help from chatGPT
 	
 //Trying chatgbt code bc my text is not appearing. I think the problem is you have to clear the canvas before text appears.
 function Name_canvas() {
