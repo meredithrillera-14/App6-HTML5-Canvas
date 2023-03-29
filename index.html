@@ -41,14 +41,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 //canvas making the rect- id Rect
 function draw_Rect() {
-	var Rect_canvas = document.getElementById("CanvasA"); // links the body with the function, by creating a label
+	var Rect_canvas = document.getElementById("A"); // links the body with the function, by creating a label
 	var Rect_context = Rect_canvas.getContext("2d"); //just a 4 line flat on screen rectangle
 	Rect_context.fillRect(50, 50, 100, 75); //size 
 }
 	
 //Trying chatgbt code bc my text is not appearing. I think the problem is you have to clear the canvas before text appears.
 function add_Name() {
- 	var c = document.getElementById("CanvasA");
+ 	var c = document.getElementById("A");
  	var context = c.getContext("2d");
  	context.font = "30px Times New Roman"; //what font and pixel for text
  	context.fillText("Meredith", 50, 50); // move text to visible area of canvas
@@ -58,14 +58,14 @@ function add_Image() {
 	var img = new Image (): //to insert an image
 	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
 	img.addEventListener('load', function() {
-	var canvas = document.getElementById("Canvas");
+	var canvas = document.getElementById("CanvasB");
 	var context = add_Image.getContext("2d"); //image flat on the screen 
 		context.drawImage(img, 0, 0); },false); //draws image and sets size of image
 }
 
 //for clearing what is present on canvas	
 function clear_Canvas() {
-	var clear_Canvas = document.getElementById("Canvas"); //links to the id canvas
+	var clear_Canvas = document.getElementById("CanvasA"); //links to the id canvas
 	eraseCanvas.width = eraseCanvas.width; //erases the canvas, while knowing how big the canvas is
 }
 		
@@ -112,9 +112,8 @@ function clear_Canvas() {
 		<h1>Canvas</h1> 
 	</div> <!-- closing section that displays the title-->
 	
-	<canvas id="Canvas" width="300" height="250" style="border:1px solid #000000"> <!--canvas code and size-->
-	</canvas>
-	
+	<canvas id="A" width="300" height="250" style="border:3px solid #000000"> </canvas> <!--canvas code and size-->
+	<canvas id="B"  width="300" height="250" style="border:3px solid #000000"> </canvas>
 	<p> </p> <!-- splits the header and button, gives space-->
 	
 	<a onlick= "draw_Rect();" class="w3-btn w3-black"> Draw Rectangle </a> <!--creates button with function linked to display rectangle when clicked-->
