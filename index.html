@@ -61,14 +61,14 @@ function clear_Canvas() {
 }
 	
 function myImage() {
-	var img = new Image () //to insert an image
-	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
-	img.addEventListener('load', function() {
 	var myImage = document.getElementById("A");
 	var context = myImage.getContext("2d"); //image flat on the screen 
-		context.myImage(img, 0, 0); },false); //draws image and sets size of image
+	var img = new Image (); //to insert an image
+	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
+	img.onload = function() {
+		context.myImage(img, 0, 0); //draws image and sets size of image
 	//using chatGPT advice to fix and have everything match for the image code
-}
+};
 		
 </script>
 
