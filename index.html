@@ -60,15 +60,16 @@ function clear_Canvas() {
 	clear_Canvas.width = clear_Canvas.width; //erases the canvas, while knowing how big the canvas is
 }
 	
+//using chatGPT advice to fix and have everything match for the image code
 function drawImage() {
 	var drawImage = document.getElementById("A");
 	var context = drawImage.getContext("2d"); //image flat on the screen 
 	var img = new Image (); //to insert an image
-	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
+	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //link to an image of bevo
 	img.onload = function() {
-		context.myImage(img, 0, 0, 75, 50); //draws image and sets size of image
-	//using chatGPT advice to fix and have everything match for the image code
-};
+		context.drawImage(img, 0, 0, 75, 50); //draws image and sets size of image
+	};
+}
 		
 </script>
 
