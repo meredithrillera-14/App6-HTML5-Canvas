@@ -48,8 +48,8 @@ function draw_Rect() {
 	
 //Trying chatgbt code bc my text is not appearing. I think the problem is you have to clear the canvas before text appears.
 function add_Name() {
- 	var c = document.getElementById("A");
- 	var context = c.getContext("2d");
+ 	var add_Name = document.getElementById("A");
+ 	var context = Name_canvas.getContext("2d");
  	context.font = "30px Times New Roman"; //what font and pixel for text
  	context.fillText("Meredith", 50, 50); // move text to visible area of canvas
 }
@@ -57,14 +57,14 @@ function add_Name() {
 //for clearing what is present on canvas	
 function clear_Canvas() {
 	var clear_Canvas = document.getElementById("A"); //links to the id canvas
-	eraseCanvas.width = eraseCanvas.width; //erases the canvas, while knowing how big the canvas is
+	clear_Canvas.width = clear_Canvas.width; //erases the canvas, while knowing how big the canvas is
 }
 	
 function add_Image() {
-	var img = new Image (): //to insert an image
+	var add_Image = new Image (): //to insert an image
 	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
 	img.addEventListener('load', function() {
-	var canvas = document.getElementById("CanvasB");
+	var canvas = document.getElementById("A");
 	var context = add_Image.getContext("2d"); //image flat on the screen 
 		context.drawImage(img, 0, 0); },false); //draws image and sets size of image
 }
