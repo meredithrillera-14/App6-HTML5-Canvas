@@ -54,6 +54,12 @@ function add_Name() {
  	context.fillText("Meredith", 50, 50); // move text to visible area of canvas
 }
 	
+//for clearing what is present on canvas	
+function clear_Canvas() {
+	var clear_Canvas = document.getElementById("A"); //links to the id canvas
+	eraseCanvas.width = eraseCanvas.width; //erases the canvas, while knowing how big the canvas is
+}
+	
 function add_Image() {
 	var img = new Image (): //to insert an image
 	img.src = 'https://www.utexas.edu/sites/default/files/ut-about-bevo.jpg'; //;link to an image of bevo
@@ -61,12 +67,6 @@ function add_Image() {
 	var canvas = document.getElementById("CanvasB");
 	var context = add_Image.getContext("2d"); //image flat on the screen 
 		context.drawImage(img, 0, 0); },false); //draws image and sets size of image
-}
-
-//for clearing what is present on canvas	
-function clear_Canvas() {
-	var clear_Canvas = document.getElementById("CanvasA"); //links to the id canvas
-	eraseCanvas.width = eraseCanvas.width; //erases the canvas, while knowing how big the canvas is
 }
 		
 </script>
@@ -118,9 +118,9 @@ function clear_Canvas() {
 	
 	<a onlick= "draw_Rect();" class="w3-btn w3-black"> Draw Rectangle </a> <!--creates button with function linked to display rectangle when clicked-->
 	<a onclick= "add_Name();" class='w3-btn w3-black'> Add Name </a> <!--button to apply text to canvas when clicked-->
- 	<a onclick = "add_Image();" class='w3-btn w3-black'> Add Image </a> <!--button for adding an image onto canvas-->
-	<a onclick = "eraseCanvas();" class='w3-btn w3-black'> Clear </a> <!--button to clear/erase what is present on the canvas-->
-
+ 	<a onclick = "clear_Canvas();" class='w3-btn w3-black'> Clear </a> <!--button to clear/erase what is present on the canvas-->
+	<a onclick = "add_Image();" class='w3-btn w3-black'> Add Image </a> <!--button for adding an image onto canvas-->
+	
 	</div>
 	</div>
 
