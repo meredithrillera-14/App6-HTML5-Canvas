@@ -41,14 +41,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 //canvas making the rect- id Rect
 function draw_Rect() {
-	var Rect_canvas = document.getElementById("Canvas"); // links the body with the function, by creating a label
+	var Rect_canvas = document.getElementById("CanvasA"); // links the body with the function, by creating a label
 	var Rect_context = Rect_canvas.getContext("2d"); //just a 4 line flat on screen rectangle
 	Rect_context.fillRect(50, 50, 100, 75); //size 
 }
 	
 //Trying chatgbt code bc my text is not appearing. I think the problem is you have to clear the canvas before text appears.
 function add_Name() {
- 	var c = document.getElementById("Canvas");
+ 	var c = document.getElementById("CanvasA");
  	var context = c.getContext("2d");
  	context.font = "30px Times New Roman"; //what font and pixel for text
  	context.fillText("Meredith", 50, 50); // move text to visible area of canvas
@@ -64,8 +64,8 @@ function add_Image() {
 }
 
 //for clearing what is present on canvas	
-function eraseCanvas() {
-	var eraseCanvas = document.getElementById("Canvas"); //links to the id canvas
+function clear_Canvas() {
+	var clear_Canvas = document.getElementById("Canvas"); //links to the id canvas
 	eraseCanvas.width = eraseCanvas.width; //erases the canvas, while knowing how big the canvas is
 }
 		
