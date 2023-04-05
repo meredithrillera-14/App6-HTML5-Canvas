@@ -48,11 +48,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 //Trying chatgbt code bc my text is not appearing. I think the problem is you have to clear the canvas before text appears.
 function Name_canvas() {
- 	var add_Name = document.getElementById("B");
-	var context = add_Name.getContext("2d");
-	ctx.font = "30px Times New Roman";
-	ctx.fillStyle = "black"; // set font color to black
-	context.fillText("Meredith", 35, 35);
+  var add_Name = document.getElementById("A");
+  var ctx = add_Name.getContext("2d");
+
+  // Clear the canvas
+  ctx.clearRect(0, 0, add_Name.width, add_Name.height); //to clear previous thing from canvas
+
+  // Set font properties and color
+  ctx.font = "30px Times New Roman";
+  ctx.fillStyle = "black";
+
+  // Draw the text
+  ctx.fillText("Meredith", 35, 35);
 }
 	
 //for clearing what is present on canvas	
